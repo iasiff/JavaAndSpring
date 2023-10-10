@@ -1,0 +1,100 @@
+version: '3.9'
+services:
+  
+  # mysql_DB:
+  #   image: 'mysql:debian'
+  #   container_name: mysql_instance
+  #   restart: on-failure
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 11111111
+  #   volumes:
+  #     - './mysqldat:/var/lib/mysql'
+  #   ports:
+  #     - '3306:3306'
+  #   networks:
+  #     - my-net
+  
+  # postgres_DB:
+  #   image: 'postgres:alpine'
+  #   container_name: postgres_instance
+  #   restart: on-failure
+  #   environment:
+  #     POSTGRES_USER: pgsuser
+  #     POSTGRES_PASSWORD: 11111111
+  #     PGDATA: /var/lib/postgresql/data/pgdata
+  #   volumes:
+  #     - './pgsdat:/var/lib/postgresql/data'
+  #   ports:
+  #     - '5432:5432'
+  #   networks:
+  #     - my-net
+  
+  # redis:
+  #   image: 'redis:alpine'
+  #   container_name: redis_instance
+  #   restart: on-failure
+  #   command: '--requirepass 11111111'
+  #   volumes:
+  #     - './redisdat:/data'
+  #   ports:
+  #     - '6379:6379'
+  #   networks:
+  #     - my-net
+  
+  # rabbitmq:
+  #   image: 'rabbitmq:management-alpine'
+  #   container_name: rabbitmq_instance
+  #   restart: on-failure
+  #   environment:
+  #     RABBITMQ_DEFAULT_USER: root
+  #     RABBITMQ_DEFAULT_PASS: 11111111
+  #     RABBITMQ_DEFAULT_VHOST: vtulhst
+  #   volumes:
+  #     - './rabitdat:/var/lib/rabbitmq/mnesia'
+  #   ports:
+  #     - '5672:5672'
+  #     - '15672:15672'
+  #   networks:
+  #     - my-net
+  
+  # nginx_srvr:
+  #   image: 'nginx:stable-alpine'
+  #   container_name: nginx_instance
+  #   restart: on-failure
+  #   volumes:
+  #     - './nginx/html:/usr/share/nginx/html'
+  #     - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+  #   ports:
+  #     - '8080:80'
+  #   networks:
+  #     - my-net
+  
+  # mongo_DB:
+  #   image: 'mongo:focal'
+  #   container_name: mongoDB_instance
+  #   restart: on-failure
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: root
+  #     MONGO_INITDB_ROOT_PASSWORD: 11111111
+  #   volumes:
+  #     - './mongodat:/data/db'
+  #   ports:
+  #     - '27017:27017'
+  #   networks:
+  #     - my-net
+  
+  # portainer:
+  #   image: 'portainer/portainer-ce:alpine'
+  #   container_name: portainer_instance
+  #   restart: on-failure
+  #   volumes:
+  #     - '/var/run/docker.sock:/var/run/docker.sock'
+  #     - './portainer_data:/data'
+  #   ports:
+  #     - '8000:8000'
+  #     - '9000:9000'
+
+networks:
+  my-net:
+    name: my_network
+    driver: bridge

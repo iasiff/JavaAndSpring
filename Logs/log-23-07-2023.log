@@ -1,0 +1,51 @@
+11:46:22 [lr.sprngbut.SprngbutApplication.main()] INFO  lr.sprngbut.SprngbutApplication - Starting SprngbutApplication using Java 17.0.8 on asif-LinuxMint with PID 98830 (/home/asif/Documents/WORK/JavaAndSpring-spboot/target/classes started by asif in /home/asif/Documents/WORK/JavaAndSpring-spboot)
+11:46:22 [lr.sprngbut.SprngbutApplication.main()] INFO  lr.sprngbut.SprngbutApplication - No active profile set, falling back to 1 default profile: "default"
+11:46:24 [lr.sprngbut.SprngbutApplication.main()] INFO  lr.sprngbut.SprngbutApplication - Started SprngbutApplication in 1.926 seconds (JVM running for 6.273)
+11:46:33 [http-nio-8080-exec-1] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T11:46:33.692930692
+11:46:33 [http-nio-8080-exec-1] ERROR lr.sprngbut.controller.HelloController - error
+11:46:33 [http-nio-8080-exec-1] DEBUG lr.sprngbut.controller.HelloController - Debuging
+11:46:33 [http-nio-8080-exec-1] WARN  lr.sprngbut.controller.HelloController - Wrning
+11:46:35 [http-nio-8080-exec-3] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T11:46:35.021289997
+11:46:35 [http-nio-8080-exec-3] ERROR lr.sprngbut.controller.HelloController - error
+11:46:35 [http-nio-8080-exec-3] DEBUG lr.sprngbut.controller.HelloController - Debuging
+11:46:35 [http-nio-8080-exec-3] WARN  lr.sprngbut.controller.HelloController - Wrning
+11:46:35 [http-nio-8080-exec-4] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T11:46:35.635712216
+11:46:35 [http-nio-8080-exec-4] ERROR lr.sprngbut.controller.HelloController - error
+11:46:35 [http-nio-8080-exec-4] DEBUG lr.sprngbut.controller.HelloController - Debuging
+11:46:35 [http-nio-8080-exec-4] WARN  lr.sprngbut.controller.HelloController - Wrning
+11:46:36 [http-nio-8080-exec-2] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T11:46:36.125274805
+11:46:36 [http-nio-8080-exec-2] ERROR lr.sprngbut.controller.HelloController - error
+11:46:36 [http-nio-8080-exec-2] DEBUG lr.sprngbut.controller.HelloController - Debuging
+11:46:36 [http-nio-8080-exec-2] WARN  lr.sprngbut.controller.HelloController - Wrning
+11:46:36 [http-nio-8080-exec-5] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T11:46:36.606642057
+11:46:36 [http-nio-8080-exec-5] ERROR lr.sprngbut.controller.HelloController - error
+11:46:36 [http-nio-8080-exec-5] DEBUG lr.sprngbut.controller.HelloController - Debuging
+11:46:36 [http-nio-8080-exec-5] WARN  lr.sprngbut.controller.HelloController - Wrning
+12:10:35 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Starting SprngbutApplication using Java 17.0.8 on asif-LinuxMint with PID 128389 (/home/asif/Documents/WORK/JavaAndSpring-spboot/target/classes started by asif in /home/asif/Documents/WORK/JavaAndSpring-spboot)
+12:10:35 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - No active profile set, falling back to 1 default profile: "default"
+12:10:37 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Started SprngbutApplication in 2.302 seconds (JVM running for 4.092)
+12:10:56 [http-nio-8080-exec-2] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T12:10:56.732501173
+12:10:56 [http-nio-8080-exec-2] ERROR lr.sprngbut.controller.HelloController - error
+12:10:56 [http-nio-8080-exec-2] DEBUG lr.sprngbut.controller.HelloController - Debuging
+12:10:56 [http-nio-8080-exec-2] WARN  lr.sprngbut.controller.HelloController - Wrning
+12:11:58 [http-nio-8080-exec-4] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T12:11:58.390505774
+12:11:58 [http-nio-8080-exec-4] ERROR lr.sprngbut.controller.HelloController - error
+12:11:58 [http-nio-8080-exec-4] DEBUG lr.sprngbut.controller.HelloController - Debuging
+12:11:58 [http-nio-8080-exec-4] WARN  lr.sprngbut.controller.HelloController - Wrning
+12:12:58 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Starting SprngbutApplication using Java 17.0.8 on asif-LinuxMint with PID 131003 (/home/asif/Documents/WORK/JavaAndSpring-spboot/target/classes started by asif in /home/asif/Documents/WORK/JavaAndSpring-spboot)
+12:12:58 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - No active profile set, falling back to 1 default profile: "default"
+12:13:00 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Started SprngbutApplication in 2.636 seconds (JVM running for 3.885)
+12:13:05 [http-nio-8080-exec-1] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T12:13:05.942274814
+12:13:05 [http-nio-8080-exec-1] ERROR lr.sprngbut.controller.HelloController - error
+12:13:05 [http-nio-8080-exec-1] DEBUG lr.sprngbut.controller.HelloController - Debuging
+12:13:05 [http-nio-8080-exec-1] WARN  lr.sprngbut.controller.HelloController - Wrning
+12:16:16 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Starting SprngbutApplication using Java 17.0.8 on asif-LinuxMint with PID 134327 (/home/asif/Documents/WORK/JavaAndSpring-spboot/target/classes started by asif in /home/asif/Documents/WORK/JavaAndSpring-spboot)
+12:16:16 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - No active profile set, falling back to 1 default profile: "default"
+12:16:18 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Started SprngbutApplication in 2.16 seconds (JVM running for 3.668)
+12:16:46 [http-nio-8080-exec-1] INFO  lr.sprngbut.controller.HelloController - #### ==> sayHello() execution <== #### 2023-07-23T12:16:46.885874371
+12:16:46 [http-nio-8080-exec-1] ERROR lr.sprngbut.controller.HelloController - error
+12:16:46 [http-nio-8080-exec-1] DEBUG lr.sprngbut.controller.HelloController - Debuging
+12:16:46 [http-nio-8080-exec-1] WARN  lr.sprngbut.controller.HelloController - Wrning
+12:18:26 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Starting SprngbutApplication using Java 17.0.8 on asif-LinuxMint with PID 134327 (/home/asif/Documents/WORK/JavaAndSpring-spboot/target/classes started by asif in /home/asif/Documents/WORK/JavaAndSpring-spboot)
+12:18:26 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - No active profile set, falling back to 1 default profile: "default"
+12:18:26 [restartedMain] INFO  lr.sprngbut.SprngbutApplication - Started SprngbutApplication in 0.616 seconds (JVM running for 132.347)
