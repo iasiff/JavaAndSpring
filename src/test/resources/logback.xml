@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration scan="true" debug="false">
-    <timestamp key="timeStamp" datePattern="dd-MM-yyyy"/>
-    <property name="LOG_DIR" value="./Logs"/>
+    <timestamp key="timeStamp" datePattern="dd-MM-yyyy" />
+    <property name="LOG_DIR" value="./Logs" />
 
     <appender name="ConsoleOut" class="ch.qos.logback.core.ConsoleAppender">
         <!-- ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -10,15 +10,15 @@
             <pattern>%d{HH:mm:ss} %green([%thread]) %highlight([%-5level]) %logger{50} - %msg%n</pattern>
         </encoder>
     </appender>
-    <!--
-        <appender name="fileOut" class="ch.qos.logback.core.FileAppender">
-            <file>${LOG_DIR}/MainLog-${timeStamp}.log</file>
-            <append>true</append>
-            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-                <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n</pattern>
-            </encoder>
-        </appender>
-    -->
+
+    <appender name="fileOut" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/TestLog-${timeStamp}.log</file>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
     <!--
         <appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">
             <smtpHost>smtp.gmail.com</smtpHost>
@@ -63,9 +63,10 @@
         </encoder>
     </appender>
 -->
-    <logger name="lr.testlearn" level="INFO" additivity="false">
+
+    <logger name="lr.testlearn" level="OFF" additivity="false">
         <!--        <appender-ref ref="fileOut"/>-->
-        <appender-ref ref="ConsoleOut"/>
+        <!-- <appender-ref ref="ConsoleOut" /> -->
     </logger>
 
     <!--
@@ -75,7 +76,7 @@
 -->
 
     <root level="OFF">
-        <appender-ref ref="ConsoleOut"/>
+        <!-- <appender-ref ref="ConsoleOut" /> -->
     </root>
 
 </configuration>

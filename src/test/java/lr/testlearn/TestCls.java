@@ -12,11 +12,9 @@ public class TestCls {
 
     @Test
     @DisplayName("mytest1")
-    public void my1Test() throws Exception {
+    public void my1Test() {
 
         int a = 10;
-        Thread.sleep(3000);
-
         Assertions.assertThat(a).isEven();
         Assertions.assertThat(a).isEqualTo(10);
     }
@@ -28,7 +26,25 @@ public class TestCls {
         int b = 5;
         int[] arr = {1, 2, 3, 4, 5};
         Assertions.assertThat(b).isEqualTo(5);
-        Assertions.assertThat(arr).hasSize(5);
+        Assertions.assertThat(b).isOdd();
+    }
+
+    @Test
+    @DisplayName("mytest3")
+    public void myTest1() throws Exception {
+
+        int a = 10;
+        Assertions.assertThat(a).isEven();
+        Assertions.assertThat(a).isEqualTo(10);
+    }
+
+    @Test
+    @DisplayName("mytest4")
+    public void myTest2() {
+
+        int b = 5;
+        int[] arr = {1, 2, 3, 4, 5};
+        Assertions.assertThat(b).isEqualTo(5);
         Assertions.assertThat(b).isOdd();
 
     }
