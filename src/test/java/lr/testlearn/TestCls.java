@@ -31,7 +31,7 @@ public class TestCls {
 
     @Test
     @DisplayName("mytest3")
-    public void myTest1() throws Exception {
+    public void my3Test() throws Exception {
 
         int a = 10;
         Assertions.assertThat(a).isEven();
@@ -40,7 +40,7 @@ public class TestCls {
 
     @Test
     @DisplayName("mytest4")
-    public void myTest2() {
+    public void my4Test() {
 
         int b = 5;
         int[] arr = {1, 2, 3, 4, 5};
