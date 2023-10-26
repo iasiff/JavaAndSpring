@@ -2,7 +2,8 @@
 
 <configuration scan="true" debug="false">
     <timestamp key="timeStamp" datePattern="dd-MM-yyyy"/>
-    <property name="LOG_DIR" value="./Logs"/>
+    <!-- look into tomcat/tomee folder -->
+    <property name="LOG_DIR" value="./logs"/>
 
     <appender name="ConsoleOut" class="ch.qos.logback.core.ConsoleAppender">
         <!-- ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -11,14 +12,15 @@
         </encoder>
     </appender>
     <!--
-        <appender name="fileOut" class="ch.qos.logback.core.FileAppender">
-            <file>${LOG_DIR}/log-${timeStamp}.log</file>
-            <append>true</append>
-            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-                <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n</pattern>
-            </encoder>
-        </appender>
-    -->
+    <appender name="fileOut" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/mainlog-${timeStamp}.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+-->
     <!--
         <appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">
             <smtpHost>smtp.gmail.com</smtpHost>
@@ -63,20 +65,15 @@
         </encoder>
     </appender>
 -->
-    <logger name="lr.spmvcwbap" level="INFO" additivity="false">
+    <logger name="lr.spmvcwbap" level="DEBUG" additivity="false">
         <!--        <appender-ref ref="fileOut"/>-->
         <appender-ref ref="ConsoleOut"/>
+        <!--        <appender-ref ref="htmlOutput"/>-->
     </logger>
 
-    <logger name="org.springframework" level="INFO" additivity="false">
+    <logger name="org.springframework" level="OFF" additivity="false">
         <appender-ref ref="ConsoleOut"/>
     </logger>
-
-    <!--
-    <logger name="com.sprngwbap" level="INFO" additivity="false">
-        <appender-ref ref="htmlOutput"/>
-    </logger>
--->
 
     <root level="OFF">
         <appender-ref ref="ConsoleOut"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://maven.apache.org/POM/4.0.0"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>lr.spmvcwbap</groupId>
@@ -12,14 +12,12 @@
     <name>Spring MVC WEB APP</name>
 
     <properties>
-        <proj.encod>UTF-8</proj.encod>
-        <project.build.sourceEncoding>${proj.encod}</project.build.sourceEncoding>
-        <project.build.propertiesEncoding>${proj.encod}</project.build.propertiesEncoding>
+        <encoding>UTF-8</encoding>
+        <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+        <project.build.propertiesEncoding>${encoding}</project.build.propertiesEncoding>
         <java.version>17</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <hibval>6.2.5.Final</hibval>
-        <tomee.ver>8.0.15</tomee.ver>
-        <tomee.claify>webprofile</tomee.claify>
         <logbck.ver>1.2.12</logbck.ver>
         <assertj.ver>3.22.0</assertj.ver>
         <hib-cp>5.6.15.Final</hib-cp>
@@ -166,21 +164,21 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
+
                 <plugin>
-                    <groupId>org.apache.tomee.maven</groupId>
-                    <artifactId>tomee-maven-plugin</artifactId>
-                    <version>${tomee.ver}</version>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+                    <version>10.0.17</version>
                     <configuration>
-                        <tomeeVersion>${tomee.ver}</tomeeVersion>
-                        <tomeeClassifier>${tomee.claify}</tomeeClassifier>
-                        <args>-Xmx512m -XX:+UseZGC</args>
-                        <tomeeHttpPort>8080</tomeeHttpPort>
-                        <synchronization>
-                            <extensions>
-                                <extension>.class</extension>
-                            </extensions>
-                        </synchronization>
-                        <reloadOnUpdate>true</reloadOnUpdate>
+                        <stopPort>9966</stopPort>
+                        <stopKey>jetty-stop</stopKey>
+                        <scanIntervalSeconds>10</scanIntervalSeconds>
+                        <webApp>
+                            <contextPath>/</contextPath>
+                        </webApp>
+                        <httpConnector>
+                            <port>8080</port>
+                        </httpConnector>
                     </configuration>
                 </plugin>
             </plugins>
