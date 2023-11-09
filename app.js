@@ -5,4 +5,8 @@
 
 console.log("hello");
 
+let a = [];
+a.push(1, 3, 4, 2, 3, 4);
+
+console.log(a);
 //console.log(added, subst);
