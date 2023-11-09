@@ -18,12 +18,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //        vr.setSuffix(".jsp");
 //        return vr;
 //    }
-
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
 
         registry.jsp("/WEB-INF/view/", ".jsp");
     }
-
 
 }
