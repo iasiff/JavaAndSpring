@@ -15,7 +15,7 @@ COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=builder ${DEPENDENCY}/META-INF /app/META-INF
 ENTRYPOINT ["java","-Xmx256m","-XX:+UseZGC","-cp","app:app/lib/*","lr.sprngbut.SprngbutApplication"]
 
-# -XX:+UseZGC -XX:+UseG1GC 
+# -XX:+UseZGC -XX:+UseG1GC
 # bellsoft/liberica-runtime-container:jdk-17-slim-musl
 
 # JAVA DEBUG

@@ -1,5 +1,6 @@
 package lr.sprngbut;
-/* 
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SprngbutApplicationTests {
 
 	@Test
-	void contextLoads() {
+    void TestingTest() {
+            Assertions.assertThat(1).isEqualTo(1);
 	}
 }
-*/
