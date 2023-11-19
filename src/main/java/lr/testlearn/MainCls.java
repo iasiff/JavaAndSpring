@@ -7,16 +7,17 @@ public class MainCls {
 
     private static final Logger log = LoggerFactory.getLogger(MainCls.class);
 
-    @Override
-    public String toString() {
-        return "MainCls{" + '}';
-    }
-
     public static void main(String[] args) {
 
         String toString = new MainCls().toString();
+        var c = Runtime.getRuntime().availableProcessors();
 
-        System.out.println(toString);
+        System.out.println(toString + " " + c);
 
+    }
+
+    @Override
+    public String toString() {
+        return "MainCls{" + '}';
     }
 }

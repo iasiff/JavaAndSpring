@@ -10,6 +10,7 @@
             <pattern>%d{HH:mm:ss} %green([%thread]) %highlight([%-5level]) %logger{50} - %msg%n</pattern>
         </encoder>
     </appender>
+
     <!--
         <appender name="fileOut" class="ch.qos.logback.core.FileAppender">
             <file>${LOG_DIR}/MainLog-${timeStamp}.log</file>
@@ -54,28 +55,23 @@
         </appender>
     -->
     <!--
-    <appender name="htmlOutput" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_DIR}/htmllog.html</file>
-        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
-            <layout class="ch.qos.logback.classic.html.HTMLLayout">
-                <pattern>%thread%level%logger%msg</pattern>
-            </layout>
-        </encoder>
-    </appender>
--->
-    <logger name="lr.testlearn" level="INFO" additivity="false">
+        <appender name="htmlOutput" class="ch.qos.logback.core.FileAppender">
+            <file>${LOG_DIR}/htmllog.html</file>
+            <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+                <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                    <pattern>%thread%level%logger%msg</pattern>
+                </layout>
+            </encoder>
+        </appender>
+    -->
+    <logger name="lr.testlearn" level="OFF" additivity="false">
         <!--        <appender-ref ref="fileOut"/>-->
-        <appender-ref ref="ConsoleOut"/>
+        <!--        <appender-ref ref="ConsoleOut"/>-->
     </logger>
 
-    <!--
-    <logger name="com.sprngwbap" level="INFO" additivity="false">
-        <appender-ref ref="htmlOutput"/>
-    </logger>
--->
 
     <root level="OFF">
-        <appender-ref ref="ConsoleOut"/>
+        <!--        <appender-ref ref="ConsoleOut"/>-->
     </root>
 
 </configuration>
