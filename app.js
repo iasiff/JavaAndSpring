@@ -1,12 +1,19 @@
-//import { add, subs } from '../basicjs/src/utils.js';
+const os = require('os');
+const path = require('path');
+const fs = require('fs');
+const http = require('http');
+const { log } = require('console');
 
-//let added = add(1, 2);
-//let subst = subs(7, 2);
+console.log("hello", "js");
 
-console.log("hello");
+console.log(os.hostname());
+console.log(os.platform());
+console.log(os.cpus());
+console.log(os.networkInterfaces());
+console.log(os.tmpdir());
+console.log(os.homedir());
+console.log(os.type());
 
-let a = [];
-a.push(1, 3, 4, 2, 3, 4);
+let dirname = path.dirname('/home/asif/Documents/');
 
-console.log(a);
-//console.log(added, subst);
+console.log(dirname);

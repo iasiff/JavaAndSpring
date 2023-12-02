@@ -1,8 +1,8 @@
 {
   "name": "basicjs",
   "version": "0.0.1",
-  "type": "module",
   "description": "Basic JS and TS app",
+  "type": "commonjs",
   "main": "app.js",
   "scripts": {
     "test": "jest",

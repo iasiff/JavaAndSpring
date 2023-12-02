@@ -1,8 +1,8 @@
-export function add (a, b) {
+function add (a, b) {
     return a + b;
 }
 
-export function subs (a, b) {
+function subs (a, b) {
 
     if (a < b) {
         return b - a;
@@ -11,3 +11,4 @@ export function subs (a, b) {
         return a - b;
     }
 }
+module.exports = { add, subs };
