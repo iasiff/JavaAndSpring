@@ -14,10 +14,19 @@ public class MainCls {
 
         System.out.println(toString + " " + c);
 
+        String gret = """
+                      hello my name is
+                      asif
+                      <div id = "as"> \\lk
+                      """;
+
+        System.out.println(gret);
+
     }
 
     @Override
     public String toString() {
+
         return "MainCls{" + '}';
     }
 }
