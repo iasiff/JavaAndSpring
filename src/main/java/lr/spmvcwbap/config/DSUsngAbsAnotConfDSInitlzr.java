@@ -16,7 +16,6 @@ public class DSUsngAbsAnotConfDSInitlzr extends AbstractAnnotationConfigDispatch
         return new Class[]{WebMvcConfig.class};
     }
 
-
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};

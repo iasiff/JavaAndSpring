@@ -16,7 +16,6 @@ public class MainController {
         log.error("ERROR");
         log.warn("WARN");
         log.debug("DEBUG");
-        log.debug("ANDADADA");
         return "index";
     }
 

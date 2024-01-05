@@ -65,13 +65,13 @@
             </encoder>
         </appender>
     -->
-    <logger name="lr.spmvcwbap" level="DEBUG" additivity="false">
+    <logger name="lr.spmvcwbap" level="OFF" additivity="false">
         <!--        <appender-ref ref="fileOut"/>-->
         <appender-ref ref="ConsoleOut"/>
         <!--        <appender-ref ref="htmlOutput"/>-->
     </logger>
 
-    <logger name="org.springframework" level="DEBUG" additivity="false">
+    <logger name="org.springframework" level="OFF" additivity="false">
         <appender-ref ref="ConsoleOut"/>
     </logger>
 
