@@ -13,7 +13,7 @@ ARG DEPENDENCY=/app/dependency
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/classes /app
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=builder ${DEPENDENCY}/META-INF /app/META-INF
-ENTRYPOINT ["java","-Xmx256m","-XX:+UseZGC","-cp","app:app/lib/*","lr.sprngbut.SprngbutApplication"]
+ENTRYPOINT ["java","-Xmx512m","-XX:+UseZGC","-cp","app:app/lib/*","lr.sprngbut.SprngbutApplication"]
 
 # -XX:+UseZGC -XX:+UseG1GC
 # bellsoft/liberica-runtime-container:jdk-17-slim-musl
