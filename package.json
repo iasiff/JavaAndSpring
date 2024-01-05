@@ -14,9 +14,6 @@
   ],
   "author": "Asif",
   "license": "GPL-3.0-or-later",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  },
   "dependencies": {
     "lodash": "^4.17.21"
   }

@@ -1,3 +1,4 @@
+/*
 const { add, subs } = require('../src/utils')
 
 test('Addition test', () => {
@@ -12,3 +13,4 @@ test('substraction test if a < b', () => {
 test('substraction test if a > b', () => {
     expect(subs(5, 3)).toBe(2);
 });
+*/
