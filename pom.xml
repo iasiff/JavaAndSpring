@@ -15,17 +15,14 @@
         <project.build.propertiesEncoding>${projt.encod}</project.build.propertiesEncoding>
         <java.version>17</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
+
         <selenium.ver>4.8.3</selenium.ver>
         <restassd.ver>5.3.2</restassd.ver>
         <junit.ver>5.9.3</junit.ver>
         <mokto.ver>5.3.1</mokto.ver>
         <assertj.ver>3.24.2</assertj.ver>
-        <selnm.html>4.8.3</selnm.html>
-        <logbck.ver>1.4.11</logbck.ver>
+        <logbck.ver>1.4.14</logbck.ver>
         <hibval>6.2.5.Final</hibval>
-        <hib-cp>5.6.15.Final</hib-cp>
-        <pgsql>42.6.0</pgsql>
-        <msql>8.0.33</msql>
         <main.cls>lr.testlearn.MainCls</main.cls>
     </properties>
 
@@ -35,26 +32,7 @@
             <artifactId>logback-classic</artifactId>
             <version>${logbck.ver}</version>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-hikaricp</artifactId>
-            <version>${hib-cp}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>${hib-cp}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${pgsql}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>${msql}</version>
-        </dependency>
+
         <!-- Bean validation -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
@@ -81,6 +59,10 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-properties</artifactId>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -126,7 +108,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>htmlunit-driver</artifactId>
-            <version>${selnm.html}</version>
+            <version>${selenium.ver}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -202,14 +184,14 @@
             <dependency>
                 <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-bom</artifactId>
-                <version>7.12.1</version>
+                <version>7.13.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
-                <version>2.15.2</version>
+                <version>2.15.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
