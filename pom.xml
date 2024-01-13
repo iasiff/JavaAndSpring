@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.16</version>
+        <version>3.1.7</version>
         <relativePath />
     </parent>
     <groupId>lr.sprngbut</groupId>
@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
-        <cucumb.ver>7.3.4</cucumb.ver>
+        <cucumb.ver>7.13.0</cucumb.ver>
         <main.cls>lr.sprngbut.SprngbutApplication</main.cls>
         <exp.port>8080</exp.port>
         <bsimg.musl>bellsoft/liberica-runtime-container:jdk-17-slim-musl</bsimg.musl>
@@ -179,7 +179,7 @@
                         <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
                         <mainClass>${main.cls}</mainClass>
                         <jvmFlags>
-                            <jvmFlag>-Xmx256m</jvmFlag>
+                            <jvmFlag>-Xmx512m</jvmFlag>
                             <jvmFlag>-XX:+UseZGC</jvmFlag>
                         </jvmFlags>
                         <ports>
