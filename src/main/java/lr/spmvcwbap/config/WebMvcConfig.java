@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @ComponentScan(basePackages = "lr.spmvcwbap")
 public class WebMvcConfig implements WebMvcConfigurer {
 
-//    @Bean
+    //    @Bean
 //    public InternalResourceViewResolver viewResolver() {
 //        InternalResourceViewResolver vr = new InternalResourceViewResolver();
 //        vr.setPrefix("/WEB-INF/view/");
